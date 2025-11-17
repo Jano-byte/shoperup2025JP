@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+    <html lang="pl">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Pamiętnik</title>
+        </head>
+        <body>
+            <header>
+                <a href="../index.html"> <span>< </span>POWRÓT</a>
+            
+                    <nav>
+                        <a href="../index.html">Strona Główna</a>
+                        <a href="../Linki/index.html">Linki</a>
+                        <a href="../Secret/index.html">Andrzej</a>
+                        <a href="../Kontakt/index.html">Kontakt</a>
+                    </nav>
+                
+            </header>
+            <main>
+                <section>
+                    <h1>Kontakt</h1>
+                </section>
+                <section>
+                    <h2>Formularz kontaktowy</h2>
+                    <form action="#">
+                        <div>
+                            <label for="first-name">Imię:</label>
+                             <input id="first-name" name="first-name" type="text">
+                        </div>
+                        <div>
+                            <label for="last-name">Nazwisko:</label>
+                             <input id="last-name" name="last-name" type="text">
+                        </div>
+                        <div>
+                            <label for="adress-email">Adres E-mail:</label>
+                             <input id="adress-email" name="adress-email" type="text">
+                        </div>
+                        <div>
+                            <label for="phone-number">Numer telefonu:</label>
+                            <input id="phone-number" name="phone-number" placeholder="+48 500-200-300" type="number">
+                        </div>
+                        <div>
+                            <label for="topic"></label>Temat</label>
+                            <select name="topic" id="topic">
+                                <option value="q-tech">Pytanie techniczne</option>
+                                <option value="q-payment">Pytanie dot. płatności</option>
+                                <option value="q-colabo">Nawiązanie współpracy</option>
+                                <option value="q-other">Inne</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="message">Treśc wiadomości</label>
+                            <textarea name="message" id="message"></textarea>
+                        </div>
+                        <div>
+                            <input name="terms" id="terms" type="checkbox">
+                            <label for="terms">
+                                Wyrażam zgodę na wszystko!
+                            </label>
+                        </div>
+                        <!--<div>
+                            <label for="male">Mężczyzna</label>
+                            <input name="gender" id="male" value="male" type="radio">
+
+                            <label for="female">Kobieta</label>
+                            <input name="gender" id="female" value="female" type="radio">
+
+                        </div>-->
+                        <div>
+                            <input value="Wyślij" type="submit">
+                        </div>
+                    </form>
+                        
+                </section>
+            </main>
+        </body>
