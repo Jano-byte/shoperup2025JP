@@ -33,13 +33,32 @@ h1, p {
     margin-right: auto;
     margin: 0 auto;
 }
+
+/* PAGE-HEADER-CONTAINER - START */
+
 .page-header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 10px;
-
 }
+
+@media (max-width: 480px) {
+    .page-header-container {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .page-header-container {
+        justify-content: space-around;
+        padding-top: 5px;
+    }
+}
+
+/* MAIN-BANER - START */
 
 .main-baner {
     width: 100%;
@@ -52,12 +71,43 @@ h1, p {
     background-repeat: no-repeat;
 }
 
+@media (max-width: 480px) {
+    .main-baner {
+        height: 150px;
+        margin: 10px 0;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .main-baner {
+        height: 220px;
+        margin: 15px 0;
+    }
+}
+
+/* PRODUCT-X - START */
+
 .product-x {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
 }
+
+@media (max-width: 480px) {
+    .product-x {
+        flex-direction: column;
+    }
+
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .product-x {
+        flex-wrap: wrap;
+    }
+}
+
+/* PRODUCT-CARD - START */
 
 .product-card {
     background-color: #f9f9f9;
@@ -67,6 +117,8 @@ h1, p {
     display: flex;
     flex-direction: column;
 }
+
+/* BUTTONS - START */
 
 .buttons {
     display: flex;
@@ -89,16 +141,43 @@ h1, p {
     
 }
 
+/* PRODUCT-PRES - START */
+
 .product-pres {
     margin: 50px 0;
 
     
 }
 
+@media (max-width: 480px) {
+    .product-pres {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+
 .product-pres img {
     float: left;
     margin: 0 40px 20px 0;
 }
+
+@media (max-width: 480px) {
+    .product-pres img {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-pres p {
+        text-align: justify;
+    }
+}
+
+/* FOOTER - START */
 
 footer {
     background-color: black;
@@ -108,12 +187,33 @@ footer p {
     color: white;
 }
 
+/* PRODUCT-WRAPP - START */
+
 .product-wrapp {
     display: flex;
     flex-direction: row-reverse;
     gap: 30px;
     align-items: flex-start;
 }
+
+@media (max-width: 480px) {
+    .product-wrapp {
+        flex-direction: column;
+        gap: 20px; 
+    }
+    .mainright-photo {
+        order: 2;
+}   
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+    .product-wrapp {
+        flex-direction: column;
+    }
+}
+
+/* TEXTIMAGE-COLUMN - START */
 
 .textimage-column {
     display: flex;
@@ -123,6 +223,16 @@ footer p {
 
 }
 
+@media (max-width: 480px) {
+    .textimage-column {
+        width: 100%;
+    }
+    .textimage-column {
+        order: 1;
+    }
+}
+
+/* PRODUCT-ITEM - START */
 
 .product-item {
     display: flex;
@@ -130,19 +240,84 @@ footer p {
     align-items: center;
 }
 
+@media (max-width: 480px) {
+    .product-item {
+        flex-direction: row;     
+        align-items: center;
+        text-align: left;
+        gap: 15px;
+    }
+
+    .product-item img {
+        width: 80px;              
+        flex-shrink: 0;            
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .product-item {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .product-item img {
+        width: 100px;    
+        flex-shrink: 0;
+    }
+
+    .product-item p {
+        font-size: 15px;  
+        line-height: 1.4;
+    }
+}
+
+
+/* MAINLEFTTEXT-PHOTO - START */
+
 .mainlefttext-photo {
     display: flex;
     gap: 30px;
     align-items: flex-start;
    margin: 40px 0;
-   
+}
 
+}
+
+@media (max-width: 480px) {
+    
+    .mainlefttext-photo {
+        flex-direction: column;
+}
+
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .mainlefttext-photo {
+        flex-direction: column;
+    }
 }
 
 .mainlefttext-photo p {
     margin-top: 0;
     
 }
+
+@media (max-width: 480px) {
+    .mainlefttext-photo img {
+        width: 100%;
+        height: auto;
+    }
+    .mainlefttext-photo img,
+    .mainright-photo img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+}
+
+/* FOOTER-RIGHT - START */
 
 .footer-right {
     display: flex;
@@ -160,4 +335,4 @@ footer p {
     font-family: "Arial", sans-serif;
     font-size: 10px
     font-weight: normal bold 100-900;
-    fon-style: normal italic; 
+    fon-style: normal italic;
