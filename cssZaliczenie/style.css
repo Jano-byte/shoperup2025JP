@@ -398,14 +398,36 @@ footer {
         padding: 10px 15px;
     }
 
+    .main-logo img {
+        width: 110px;
+    }
+
+    .header-icons {
+        gap: 12px;
+    }
+
+    .header-icons img {
+        width: 20px;
+        height: auto;
+    }
+
+    .user-icon img {
+        width: 24px;
+    }
+
     .search-box {
         display: none;
+    }
+
+    .other-users-icons {
+        margin: 10px 0;
     }
 
     .main-content {
         width: 100%;
         margin: 0;
         flex-direction: column;
+        padding: 0 10px; 
     }
 
     .left-side {
@@ -417,12 +439,15 @@ footer {
     }
 
     .dashboard-posts, .other-users-icons, .more-posts {
-        border-radius: 0;
-        border-left: none;
-        border-right: none;
+        border-radius: 8px; 
         margin-bottom: 10px;
     }
 
+
+    .post-image {
+        margin-left: 0;
+        margin-right: 0;
+    }
 
     footer {
         padding: 20px 15px;
