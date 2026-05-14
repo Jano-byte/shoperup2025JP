@@ -1,0 +1,19 @@
+
+
+%center-vertical {
+    display: flex;
+    align-items: center;
+}
+
+.page_header {
+    @extend %center-vertical;
+}
+
+.main-nav {
+    ul {
+    @extend %center-vertical;
+    list-style: none;
+    gap: 10px;
+
+    }
+}

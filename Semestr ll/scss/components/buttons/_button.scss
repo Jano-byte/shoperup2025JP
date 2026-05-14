@@ -1,0 +1,26 @@
+@import "../../base/colors";
+
+
+.button {
+    background-color: $primary-color;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding-left: calc($base-padding / 2);
+    padding-right: calc($base-padding / 2);
+    padding-bottom: $base-padding;
+    padding-top: $base-padding;
+}
+
+.btn-main {
+    @include button-style("default");
+}
+
+.btn-save {
+    @include button-style("success");
+}
+
+.btn-delete {
+    @include button-style("error");
+}

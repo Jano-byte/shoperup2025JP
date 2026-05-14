@@ -1,0 +1,22 @@
+
+
+// 1. Mapa kolorów (Źródło prawdy)
+$button-colors: (
+    "default": #34495e,
+    "success": #27ae60,
+    "error": #e74c3c
+);
+
+// 2. Funkcja pobierająca kolor
+@function get-btn-color($name) {
+    @if map-has-key($button-colors, $name) {
+        @return map-get($button-colors, $name);
+    } @else {
+        @warn "Klucz '#{$name}' nie istnieje w mapie $button-colors. Zwracam czarny.";
+        @return #000;
+    }
+}
+
+// Zmienne
+$primary-color: #08f9c9;
+$secondary-color: #0cf908;
