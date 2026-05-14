@@ -1,0 +1,23 @@
+
+
+@mixin text-style($color, $size, $weight: normal) {
+    color: $color;
+    font-size: $size;
+    font-weight: $weight;
+}
+
+// button-style
+@mixin button-style($type) {
+    $bg-color: get-btn-color($type);
+    
+    background-color: $bg-color;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: darken($bg-color, 10%); 
+    }
+}

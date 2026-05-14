@@ -1,0 +1,96 @@
+.main-content {
+  outline: auto 1px red;
+  padding: 10px;
+  margin: 10px;
+}
+
+.main_logo {
+  width: 80px;
+  height: auto;
+}
+
+* {
+  background-color: greenyellow;
+}
+
+p {
+  color: #c40808;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+h1 {
+  color: #111;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+h2 {
+  color: #111;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+h3 {
+  color: #111;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.main-nav ul, .page_header {
+  display: flex;
+  align-items: center;
+}
+
+.main-nav ul {
+  list-style: none;
+  gap: 10px;
+}
+
+.button {
+  background-color: #08f9c9;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.btn-main {
+  background-color: #34495e;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn-main:hover {
+  background-color: rgb(33.8356164384, 47.5, 61.1643835616);
+}
+
+.btn-save {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn-save:hover {
+  background-color: rgb(29.661971831, 132.338028169, 73.014084507);
+}
+
+.btn-delete {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn-delete:hover {
+  background-color: rgb(213.698630137, 43.8356164384, 26.301369863);
+}/*# sourceMappingURL=style.css.map */
